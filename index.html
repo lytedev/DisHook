@@ -147,7 +147,7 @@ function post(url, jsonmsg){
 	xhr.send(data);
 	xhr.onreadystatechange = function() {
 		if(this.status != 200){
-			alert(this.responseText);
+			Materialize.toast('Error, Discord returned\n'+ this.status + " " + this.responseText, 5000);
 		}
 	}
 }
