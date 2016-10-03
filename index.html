@@ -85,7 +85,7 @@
 <script>
 function send(){
 	if(!document.getElementById('url').value){
-		alert("You need to provide a webhook URL.")
+		Materialize.toast("You need to provide a webhook URL.")
 	}
 	else{
 	var hookurl = document.getElementById('url').value + "/slack"
